@@ -104,7 +104,7 @@ public class Menu {
         }
     }
 
-    private void guardarMenu(String[] menu) throws IOException {
+    public void guardarMenu(String[] menu) throws IOException {
         try {
             //Se guarda el nuevo menú en en menu.txt
             FileWriter writer = new FileWriter("menu.txt");
@@ -127,6 +127,20 @@ public class Menu {
     }
 
 
+    public void addNuevoPlato(String nombre, String fichero){
+        try {
+            FileWriter writer = new FileWriter(fichero, true);
+
+            // Se escribe el nuevo plato en una nueva línea
+            writer.write(System.lineSeparator()+nombre);
+
+            writer.close();
+        } catch (IOException e) {
+            System.err.println("Error al añadir el nuevo plato: " + e.getMessage());
+        }
+
+    }
+
     public String[] getMenuCompleto() {
         return menuCompleto;
     }
@@ -138,5 +152,8 @@ public class Menu {
                 "menuCompleto=" + Arrays.toString(menuCompleto) +
                 '}';
     }
+
+
+
 }
 

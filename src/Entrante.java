@@ -6,6 +6,8 @@ public class Entrante extends Plato {
         this.PLATO= tipoPlato.ENTRANTE;
     }
 
+
+
     @Override
     public String[] crearLista() {
         String[] nombresEntrantes = {"Ensalada", "Sopa", "Carpaccio", "Tostadas", "Gazpacho", "Empanadas"};

@@ -12,6 +12,7 @@ public abstract class Plato {
         this.precio = precio;
     }
 
+
     public abstract String[] crearLista();
 
 }

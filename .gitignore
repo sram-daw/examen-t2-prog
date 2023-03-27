@@ -1,0 +1,4 @@
+# Project exclude paths
+/out/
+.idea
+examen-t2-prog.iml
