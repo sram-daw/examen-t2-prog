@@ -29,7 +29,7 @@ public class Main {
                     nuevoMenu.leerCaracteres("menus_historico.txt");
                     break;
                 case 4:
-                    //implementación propia
+                    //implementación propia para crear un plato nuevo propio
                     System.out.println("¿Qué plato desea crear?: \n1.Entrante \n2.Primero \n3.Segundo \n4.Postre");
                     opcion = scannerInts.nextInt();
                     System.out.println("Elija un nombre para el plato: ");
